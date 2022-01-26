@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root{
+
+    --extarlarge-font-size: 50px;
+    --large-font-size: 36px;
+    --medium-font-size: 24px;
+    --normal-font-size: 16px;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,  html {
+
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+}
+
+
+h2, h3, p {
+    color: white;  
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.job-title {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* p {
+    color: #0a0a0a;
+} */
+
