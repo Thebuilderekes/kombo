@@ -23,6 +23,13 @@
 }
 
 
+::selection {
+    background: #eeb16a; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #eeb16a; ; /* Gecko Browsers */
+  }
+
 body,  html {
 
     font-family: 'Roboto', sans-serif;
@@ -46,12 +53,8 @@ a {
 
 /*===============animate menu lines=======================*/
 
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
- 
+header .navigation {
+    position: relative;
 }
 
 header .navigation .nav-menu .menu-line {
@@ -81,14 +84,14 @@ header .navigation .logo {
       width: 20%;
       padding: 10px 0;
       transition:  1.2s all;
-      z-index: 20;
+      z-index: 99;
   }
 
   .nav-menu-items a {
       color: #ffffff;
       display: block;
      padding: 30px 30px;
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Archivo Black', sans-serif;
      font-size: var(--medium-font-size);
   }
 
@@ -102,18 +105,17 @@ header .navigation .logo {
 
 .slant-down {
 
-    
+
  transform: rotate(45deg);
 position: absolute;
-top: 15%;
-left: 1.5%;
+
 transition: 0.4s all;
 }
 
 .slant-up {
     transform: rotate(-45deg);
     transition: 0.4s all;
-    bottom: 2%;
+    bottom: 5%;
     left: 3%;
 }
 
@@ -135,25 +137,6 @@ h1, h2, h3, h4 {
 p{
     font-family: 'Roboto', sans-serif;
 }
-
-
-
-
-/*===============animate menu button lines=======================*/
-
-.slant-down {
-
-    
-    transform: rotate(45deg);
-   position: absolute;
-   top: 4.6%;
-   transition: 0.4s all;
-   }
-   
-   .slant-up {
-       transform: rotate(-45deg);
-       transition: 0.4s all;
-   }
 
 
 
@@ -234,9 +217,16 @@ p{
     
         transform: rotate(45deg);
        position: absolute;
-       top: 3%;
-       left: 2.5%;
+       top: 35%;
+       left: 2%;
        transition: 0.4s all;
+       }
+
+
+
+       .slant-up {
+           top: 3%;
+           left: 1%;
        }
   
 }
@@ -305,15 +295,21 @@ p{
     }
   
 
-
     .slant-down {
 
     
         transform: rotate(45deg);
        position: absolute;
-       top: 3.8%;
-       left: 5%;
+       top: 35%;
+       left: 5.7%;
        transition: 0.4s all;
+       }
+
+
+
+       .slant-up {
+           top: 3%;
+           left: 6%;
        }
   
 }
@@ -348,9 +344,16 @@ p{
     
         transform: rotate(45deg);
        position: absolute;
-       top: 5%;
+       top: 35%;
        left: 5.7%;
        transition: 0.4s all;
+       }
+
+
+
+       .slant-up {
+           top: 3%;
+           left: 6%;
        }
   
 }
@@ -373,14 +376,21 @@ p{
     }
 
 
-    .slant-down {
+ .slant-down {
 
     
         transform: rotate(45deg);
        position: absolute;
-       top: 7%;
-       left: 6.5%;
+       top: 35%;
+       left: 5.7%;
        transition: 0.4s all;
+       }
+
+
+
+       .slant-up {
+           top: 3%;
+           left: 6%;
        }
   
 }

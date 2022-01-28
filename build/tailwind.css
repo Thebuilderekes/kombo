@@ -468,12 +468,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.m-auto {
-  margin: auto;
+.fixed {
+  position: fixed;
 }
 
-.m-0 {
-  margin: 0px;
+.m-auto {
+  margin: auto;
 }
 
 .mt-2 {
@@ -488,6 +488,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -496,8 +500,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-x-6 {
@@ -548,12 +560,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
-.pl-16 {
-  padding-left: 4rem;
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pb-4 {
@@ -564,16 +572,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.5rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
 .text-center {
   text-align: center;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
 }
 
 .text-neutral-200 {
@@ -617,6 +617,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: #eeb16a;
+  /* WebKit/Blink Browsers */
+}
+
+::selection {
+  background: #eeb16a;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #eeb16a; ; /* Gecko Browsers */
+}
+
 body,  html {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
@@ -638,11 +652,8 @@ a {
 
 /*===============animate menu lines=======================*/
 
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+header .navigation {
+  position: relative;
 }
 
 header .navigation .nav-menu .menu-line {
@@ -670,14 +681,14 @@ header .nav-menu-items {
   width: 20%;
   padding: 10px 0;
   transition:  1.2s all;
-  z-index: 20;
+  z-index: 99;
 }
 
 .nav-menu-items a {
   color: #ffffff;
   display: block;
   padding: 30px 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   font-size: var(--medium-font-size);
 }
 
@@ -690,15 +701,13 @@ ul li a i {
 .slant-down {
   transform: rotate(45deg);
   position: absolute;
-  top: 15%;
-  left: 1.5%;
   transition: 0.4s all;
 }
 
 .slant-up {
   transform: rotate(-45deg);
   transition: 0.4s all;
-  bottom: 2%;
+  bottom: 5%;
   left: 3%;
 }
 
@@ -716,20 +725,6 @@ h1, h2, h3, h4 {
 
 p{
   font-family: 'Roboto', sans-serif;
-}
-
-/*===============animate menu button lines=======================*/
-
-.slant-down {
-  transform: rotate(45deg);
-  position: absolute;
-  top: 4.6%;
-  transition: 0.4s all;
-}
-
-.slant-up {
-  transform: rotate(-45deg);
-  transition: 0.4s all;
 }
 
 @media only screen and (max-width:912px) {
@@ -780,9 +775,14 @@ p{
   .slant-down {
     transform: rotate(45deg);
     position: absolute;
-    top: 3%;
-    left: 2.5%;
+    top: 35%;
+    left: 2%;
     transition: 0.4s all;
+  }
+
+  .slant-up {
+    top: 3%;
+    left: 1%;
   }
 }
 
@@ -834,9 +834,14 @@ p{
   .slant-down {
     transform: rotate(45deg);
     position: absolute;
-    top: 3.8%;
-    left: 5%;
+    top: 35%;
+    left: 5.7%;
     transition: 0.4s all;
+  }
+
+  .slant-up {
+    top: 3%;
+    left: 6%;
   }
 }
 
@@ -861,9 +866,14 @@ p{
   .slant-down {
     transform: rotate(45deg);
     position: absolute;
-    top: 5%;
+    top: 35%;
     left: 5.7%;
     transition: 0.4s all;
+  }
+
+  .slant-up {
+    top: 3%;
+    left: 6%;
   }
 }
 
@@ -880,9 +890,14 @@ p{
   .slant-down {
     transform: rotate(45deg);
     position: absolute;
-    top: 7%;
-    left: 6.5%;
+    top: 35%;
+    left: 5.7%;
     transition: 0.4s all;
+  }
+
+  .slant-up {
+    top: 3%;
+    left: 6%;
   }
 }
 
@@ -960,11 +975,6 @@ p{
     line-height: 2.25rem;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -999,14 +1009,14 @@ p{
     line-height: 2.25rem;
   }
 
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .md\:leading-10 {
