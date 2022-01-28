@@ -650,7 +650,19 @@ a {
   color: var(--text-color);
 }
 
-/*===============animate menu lines=======================*/
+h3, p {
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*===============Header CSS=======================*/
 
 header .navigation {
   position: relative;
@@ -692,6 +704,10 @@ header .nav-menu-items {
   font-size: var(--medium-font-size);
 }
 
+.job-title {
+  font-family: 'Roboto', sans-serif;
+}
+
 ul li a i {
   color: #e66d0a;
 }
@@ -711,21 +727,11 @@ ul li a i {
   left: 3%;
 }
 
-h3, p {
-  color: white;
-}
+/*-----------------------------------------------------------------------------*/
 
-h1, h2, h3, h4 {
-  font-family: 'Archivo Black', sans-serif;
-}
+/*-----------------------MEDIA QUERIES-------------------------------------*/
 
-.job-title {
-  font-family: 'Roboto', sans-serif;
-}
-
-p{
-  font-family: 'Roboto', sans-serif;
-}
+/*-----------------------------------------------------------------------------*/
 
 @media only screen and (max-width:912px) {
   header .nav-menu-items {
