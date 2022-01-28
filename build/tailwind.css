@@ -964,6 +964,10 @@ p{
     padding: 4rem;
   }
 
+  .md\:text-left {
+    text-align: left;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1008,6 +1012,10 @@ p{
 
   .lg\:p-20 {
     padding: 5rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-xl {
