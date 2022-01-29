@@ -484,8 +484,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-screen {
@@ -552,12 +564,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.5rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pb-8 {
@@ -570,6 +582,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -958,6 +978,10 @@ ul li a i {
     margin: 2.5rem;
   }
 
+  .xs\:h-screen {
+    height: 100vh;
+  }
+
   .xs\:flex-col {
     flex-direction: column;
   }
@@ -974,9 +998,9 @@ ul li a i {
     text-align: center;
   }
 
-  .xs\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .xs\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .xs\:text-2xl {
@@ -987,6 +1011,11 @@ ul li a i {
   .xs\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .xs\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .xs\:leading-7 {
@@ -1033,6 +1062,10 @@ ul li a i {
 }
 
 @media (min-width: 768px) {
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:flex-col {
     flex-direction: column;
   }
@@ -1074,6 +1107,10 @@ ul li a i {
 @media (min-width: 1024px) {
   .lg\:m-10 {
     margin: 2.5rem;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:flex-row {
@@ -1129,5 +1166,13 @@ ul li a i {
 
   .lg\:leading-10 {
     line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  @media (min-width: 1024px) {
+    .md\:lg\:h-screen {
+      height: 100vh;
+    }
   }
 }
