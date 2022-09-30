@@ -520,8 +520,8 @@ video {
   margin: auto;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-8 {
@@ -546,10 +546,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .transform {
@@ -615,14 +611,14 @@ video {
   padding: 1.5rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pb-2 {
@@ -631,10 +627,6 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -659,14 +651,14 @@ video {
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-
 .text-neutral-200 {
   --tw-text-opacity: 1;
   color: rgb(229 229 229 / var(--tw-text-opacity));
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1185,20 +1177,12 @@ input[type=checkbox]:checked + label {
     margin: 5rem;
   }
 
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:flex-col {
     flex-direction: column;
   }
 
   .sm\:p-24 {
     padding: 6rem;
-  }
-
-  .sm\:pt-12 {
-    padding-top: 3rem;
   }
 
   .sm\:text-2xl {
@@ -1257,8 +1241,8 @@ input[type=checkbox]:checked + label {
     line-height: 2.25rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
+  .md\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
@@ -1277,6 +1261,11 @@ input[type=checkbox]:checked + label {
     line-height: 1rem;
   }
 
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .md\:leading-10 {
     line-height: 2.5rem;
   }
@@ -1289,10 +1278,6 @@ input[type=checkbox]:checked + label {
 
   .lg\:m-24 {
     margin: 6rem;
-  }
-
-  .lg\:flex {
-    display: flex;
   }
 
   .lg\:h-screen {
@@ -1321,9 +1306,9 @@ input[type=checkbox]:checked + label {
     line-height: 2.5rem;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-5xl {
@@ -1331,9 +1316,9 @@ input[type=checkbox]:checked + label {
     line-height: 1;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-xs {

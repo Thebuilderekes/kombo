@@ -399,8 +399,7 @@ font-style: normal;
   header .nav-menu-items-mobile {
     position: absolute;
     left: -70%;
-
-    padding: 10px 0;
+   padding: 10px 0;
     transition: 1.2s all;
     z-index: 20;
   }
@@ -418,7 +417,6 @@ font-style: normal;
   header .nav-menu-items-mobile {
     position: absolute;
     left: -70%;
-
     padding: 10px 0;
     transition: 1.2s all;
     z-index: 20;
