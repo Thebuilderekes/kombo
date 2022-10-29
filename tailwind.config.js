@@ -7,20 +7,13 @@ content: ["index.html" , "./src/input.css"],
     extend: {
       colors: {
         'body': "#0a0a0a"
-    
       }
     },
-
-
     screens: {
       'xs': '320px',
       ...defaultTheme.screens,
     },
-    
-
-
-
-
   },
   plugins: [],
+  
 }
