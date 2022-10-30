@@ -2,7 +2,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   mode: 'jit',
-purge: ["index.html" , "./src/input.css"],
+content: ["index.html" , "./src/input.css"],
   theme: {
     extend: {
       colors: {

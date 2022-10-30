@@ -6,7 +6,7 @@
   },
   "scripts": {
     "tailwind": "tailwindcss  -i ./src/input.css -o build/tailwind.css ",
-    "dev": " postcss src/input.css -o ./build/tailwind.css --minify --watch  ",
-    "build": "postcss src/input.css -o build/tailwind.css --minify"
+    "dev": " -i src/input.css -o ./build/tailwind.css --minify --watch  ",
+
   }
 }
