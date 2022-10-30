@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-
-content: ["index.html" , "./src/input.css"],
+  mode: 'jit',
+purge: ["index.html" , "./src/input.css"],
   theme: {
     extend: {
       colors: {
